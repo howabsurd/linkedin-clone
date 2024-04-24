@@ -1,5 +1,6 @@
  import UserInformation from "@/components/UserInformation";
 import { SignedIn } from "@clerk/nextjs";
+import PostForm from "../components/PostForm";
 
 export default function Home() {
   return (
@@ -11,9 +12,9 @@ export default function Home() {
     
 
     <section className="col-span-full md:col-span-6 xl:col-span-4 xl:max-w-xl mx-auto w-full">
-      {/* <SignedIn>
+      {/* <SignedIn> */}
         <PostForm />
-      </SignedIn>
+      {/* </SignedIn>
       <PostFeed posts={posts} /> */}
     </section>
 
