@@ -1,3 +1,4 @@
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import {
   Briefcase,
   HomeIcon,
@@ -55,6 +56,15 @@ async function Header() {
           <p>Messaging</p>
         </Link>
 
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+
+        <SignedOut>
+          <Button asChild variant="secondary">
+            <SignInButton />
+          </Button>
+        </SignedOut>
       </div>
     </div>
   );
